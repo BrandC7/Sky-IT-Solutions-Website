@@ -203,7 +203,7 @@ const Navbar = () => {
         <p className="text-sm text-gray-500">
           <a className="leading-loose">
             <b>Phone: </b> 
-            <a href="tel:+19569695844" className="hover:underline hover:bold leading-loose">
+            <a href="tel:+19569695855" className="hover:underline hover:bold leading-loose">
             +1 (956) 969-5855
             </a>
             <br />
