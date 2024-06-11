@@ -1,5 +1,6 @@
 # 🦅 Sky IT Solutions Website 🦅
 Sky IT Solutions: A Modern, Responsive, and Dynamic Website.
+v1.0.1
 
 ##  💻 Implementation. 💻
 The website is built using React as the framework, powered by Vite for frontend development.
