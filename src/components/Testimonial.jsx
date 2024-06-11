@@ -28,9 +28,9 @@ const Testimonial = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="w-full mx-auto sm:py-22 py-8 px-4 lg:px-[4rem] saturate-150 sepia-[30%]"
+      className="w-full mx-auto z-0 sm:py-22 py-8 px-4 lg:px-[4rem] saturate-150 sepia-[30%]"
     >
-      <div className="static max-w-screen-xl w-full mx-auto bg-white m-[6rem] rounded-2xl shadow-xl px-4 py-6 mx-auto text-center lg:py-[4rem]">
+      <div className="static max-w-screen-xl w-full mx-auto bg-white z-30 m-[6rem] rounded-2xl shadow-xl px-4 py-6 mx-auto text-center lg:py-[4rem]">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <figure key={testimonial.id} className="max-w-screen-md mx-auto">
