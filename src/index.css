@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-next:before,
+.slick-prev:before {
+  color: #0369a1; /* Change the color of the arrows */
+}
+
+.slick-next {
+  right: -15px; /* Change the position of the next arrow */
+}
+
+.slick-prev {
+  left: -15px; /* Change the position of the prev arrow */
+}
