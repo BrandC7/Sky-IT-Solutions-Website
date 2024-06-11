@@ -109,14 +109,14 @@ const Navbar = () => {
       <div
         id="drawer-contact"
         className={`fixed bottom-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform bg-white w-80 ${
-          isOpen ? "translate-x-0" : ""
-        } ${!isOpen ? "translate-x-full" : ""}`}
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } `}
         tabIndex="-1"
         aria-labelledby="drawer-contact-label"
       >
         <h5
           id="drawer-label"
-          className="inline-flex mt-[2rem] items-center mb-2 text-base font-semibold text-gray-500 uppercase"
+          className="inline-flex mt-[4rem] items-center mb-2 text-base font-semibold text-gray-500 uppercase"
         >
           <svg
             className="w-4 h-4 me-2.5"
@@ -135,7 +135,7 @@ const Navbar = () => {
           type="button"
           data-drawer-hide="drawer-contact"
           aria-controls="drawer-contact"
-          className="text-gray-400 mt-[2rem] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
+          className="text-gray-400 mt-[4rem] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
         >
           <svg
             className="w-3 h-3"
