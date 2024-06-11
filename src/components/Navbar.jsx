@@ -114,10 +114,9 @@ const Navbar = () => {
         tabIndex="-1"
         aria-labelledby="drawer-contact-label"
       >
-        {" "}
         <h5
           id="drawer-label"
-          className="inline-flex items-center mb-2 text-base font-semibold text-gray-500 uppercase"
+          className="inline-flex mt-[2rem] items-center mb-2 text-base font-semibold text-gray-500 uppercase"
         >
           <svg
             className="w-4 h-4 me-2.5"
@@ -136,7 +135,7 @@ const Navbar = () => {
           type="button"
           data-drawer-hide="drawer-contact"
           aria-controls="drawer-contact"
-          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
+          className="text-gray-400 mt-[2rem] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
         >
           <svg
             className="w-3 h-3"
@@ -219,9 +218,18 @@ const Navbar = () => {
             </b>
             <br /> 705 S. Texas Blvd. <br /> Weslaco, TX 78596
           </a>
-          <a href="https://www.linkedin.com/in/esteban-mejia-jr-87029512b/" target="_blank" rel="noopener noreferrer">
-          <img href="/" src={linkedin} className="size-[3rem] mt-[1rem]" alt="LinkedIn" />
-        </a>
+          <a
+            href="https://www.linkedin.com/in/esteban-mejia-jr-87029512b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              href="/"
+              src={linkedin}
+              className="size-[3rem] mt-[1rem]"
+              alt="LinkedIn"
+            />
+          </a>
         </div>
       </div>
     </nav>
