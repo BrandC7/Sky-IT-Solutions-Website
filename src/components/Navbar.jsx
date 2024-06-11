@@ -202,9 +202,12 @@ const Navbar = () => {
         </p>
         <p className="text-sm text-gray-500">
           <a className="leading-loose">
-            <b>Phone: </b> 
-            <a href="tel:+19569695855" className="hover:underline hover:bold leading-loose">
-            +1 (956) 969-5855
+            <b>Phone: </b>
+            <a
+              href="tel:+19569695855"
+              className="hover:underline hover:bold leading-loose"
+            >
+              +1 (956) 969-5855
             </a>
             <br />
             <b>Fax:</b> +1 (956) 969-5844
@@ -221,18 +224,17 @@ const Navbar = () => {
             </b>
             <br /> 705 S. Texas Blvd. <br /> Weslaco, TX 78596
           </a>
-          <a
-            href="https://www.linkedin.com/in/esteban-mejia-jr-87029512b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              href="/"
-              src={linkedin}
-              className="size-[3rem] mt-[1rem]"
-              alt="LinkedIn"
-            />
-          </a>
+          <img
+            src={linkedin}
+            className="size-[3rem] mt-[1rem] hover:opacity-70 cursor-pointer"
+            alt="LinkedIn"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/esteban-mejia-jr-87029512b/",
+                "_blank"
+              )
+            }
+          />
         </div>
       </div>
     </nav>
