@@ -96,7 +96,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-84}
                   duraion={500}
-                  className="block my-2 rounded-lg px-3 text-black hover:text-skyit md:bg-transparent md:p-0"
+                  className="block my-2 rounded-lg px-3 text-black hover:text-skyit md:bg-transparent md:p-0 cursor-pointer"
                   aria-current="page"
                 >
                   {link}
@@ -116,7 +116,7 @@ const Navbar = () => {
       >
         <h5
           id="drawer-label"
-          className="inline-flex mt-[4rem] items-center mb-2 text-base font-semibold text-gray-500 uppercase"
+          className="inline-flex mt-[4rem] md:mt-[8rem] xl:mt-0 items-center mb-2 text-base font-semibold text-gray-500 uppercase"
         >
           <svg
             className="w-4 h-4 me-2.5"
@@ -135,7 +135,7 @@ const Navbar = () => {
           type="button"
           data-drawer-hide="drawer-contact"
           aria-controls="drawer-contact"
-          className="text-gray-400 mt-[4rem] bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
+          className="text-gray-400 mt-[4rem] md:mt-[8rem] xl:mt-0 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center "
         >
           <svg
             className="w-3 h-3"
@@ -201,41 +201,37 @@ const Navbar = () => {
           </a>
         </p>
         <p className="text-sm text-gray-500">
-          <a className="leading-loose">
-            <b>Phone: </b>
-            <a
-              href="tel:+19569695855"
-              className="hover:underline hover:bold leading-loose"
-            >
-              +1 (956) 969-5855
-            </a>
-            <br />
-            <b>Fax:</b> +1 (956) 969-5844
-            <br />
+          <b>Phone: </b>
+          <a
+            href="tel:+19569695855"
+            className="hover:underline hover:bold leading-loose"
+          >
+            +1 (956) 969-5855
           </a>
+          <br />
+          <b>Fax:</b> +1 (956) 969-5844
+          <br />
         </p>
         <div className="mt-3 text-sm text-gray-900">
           <b>Hours:</b> Mon-Fri 8:00am-5:00pm
         </div>
         <div className="mt-[1rem] text-sm text-gray-900">
-          <a className="">
-            <b>
-              Weslaco <br /> Corporate Office{" "}
-            </b>
-            <br /> 705 S. Texas Blvd. <br /> Weslaco, TX 78596
-          </a>
-          <img
-            src={linkedin}
-            className="size-[3rem] mt-[1rem] hover:opacity-70 cursor-pointer"
-            alt="LinkedIn"
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/esteban-mejia-jr-87029512b/",
-                "_blank"
-              )
-            }
-          />
+          <b>
+            Weslaco <br /> Corporate Office{" "}
+          </b>
+          <br /> 705 S. Texas Blvd. <br /> Weslaco, TX 78596
         </div>
+        <img
+          src={linkedin}
+          className="size-[3rem] mt-[1rem] hover:opacity-70 cursor-pointer"
+          alt="LinkedIn"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/esteban-mejia-jr-87029512b/",
+              "_blank"
+            )
+          }
+        />
       </div>
     </nav>
   );
