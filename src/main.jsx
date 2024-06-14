@@ -3,6 +3,18 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFoundPage from "./components/NotFoundPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <NotFoundPage />,
+
+  },
+]);
+
 {
   console.log("Made by: Brandon Cavazos");
 }
@@ -10,6 +22,6 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
