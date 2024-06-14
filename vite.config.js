@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [react()],
   //Next lines can be adapt for the deployment between Docker and Github.
   base: "/Sky-IT-Solutions-Website/",
-  // preview: {
-  //   port: 3000,
-  //   strictPort: true,
-  // },
-  // // server: {
-  //   port: 3000,
-  //   strictPort: true,
-  //   host: true,
-  //   origin: "http://localhost:3000",  
-  // },
+   preview: {
+     port: 3000,
+     strictPort: true,
+   },
+   server: {
+     port: 3000,
+     strictPort: true,
+     host: true,
+     origin: "http://localhost:3000",  
+   },
 });
