@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
   //Next lines can be adapt for the deployment between Docker and Github.
-  //base: "/Sky-IT-Solutions-Website/",
+  base: "/Sky-IT-Solutions-Website/",
   // preview: {
   //   port: 3000,
   //   strictPort: true,
