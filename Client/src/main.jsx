@@ -8,6 +8,8 @@ import NotFoundPage from "./components/NotFoundPage";
 
 const router = createBrowserRouter([
   {
+    // For github pages deployment use "/Sky-IT-Solutions-Website/" on the next line.
+    //path: "/",
     path: "/Sky-IT-Solutions-Website/",
     element: <App />,
     errorElement: <NotFoundPage />,
